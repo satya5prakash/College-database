@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.MainFragment"
+    android:layout_marginTop="100sp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginTop="20sp"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColor="@color/primary_text"
+        android:textColorHint="@color/primary_text"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/editTextSalary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginTop="20sp"
+        android:ems="10"
+        android:hint="Salary"
+        android:inputType="number"
+        android:textColor="@color/primary_text"
+        android:textColorHint="@color/primary_text"
+        android:textStyle="normal"
+        android:layout_below="@+id/editTextName"
+
+        />
+
+   <EditText
+        android:id="@+id/editTextMarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginTop="20sp"
+        android:ems="10"
+        android:hint="Marks"
+        android:inputType="number"
+        android:textColor="@color/primary_text"
+        android:textColorHint="@color/primary_text"
+        android:textStyle="normal"
+        android:layout_below="@+id/editTextName" />
+    </RelativeLayout>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="20sp"
+
+        >
+
+
+    </Spinner>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="30sp"
+        android:gravity="center"
+        android:orientation="horizontal"
+
+        >
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:background="@color/divider"
+            android:gravity="center"
+            android:text="Insert"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/primary_text"
+            android:textStyle="normal"
+
+            />
+
+        <Button
+            android:id="@+id/buttonReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:background="@color/divider"
+            android:gravity="center"
+            android:text="Reset"
+            android:textColor="@color/primary_text"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+
+</LinearLayout>
